@@ -1,0 +1,31 @@
+{
+  "name": "sample-react-project",
+  "version": "1.0.0",
+  "description": "sample react project",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server index.js",
+    "build": "webpack",
+    "test": "jshint index.js",
+    "lint": "eslint ."
+  },
+  "author": "Lesticker",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "8.0.0-beta.0",
+    "eslint": "^5.15.3",
+    "jshint": "^2.10.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1"
+  }
+}
