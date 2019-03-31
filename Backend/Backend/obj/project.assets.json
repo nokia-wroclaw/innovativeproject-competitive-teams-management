@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projekty\\Nokia\\Backend\\Backend\\Backend\\Backend.csproj",
+      "projectUniqueName": "D:\\Projekty\\projekt_nokia\\Backend\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\Projekty\\Nokia\\Backend\\Backend\\Backend\\Backend.csproj",
+      "projectPath": "D:\\Projekty\\projekt_nokia\\Backend\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\Lenka\\.nuget\\packages\\",
-      "outputPath": "D:\\Projekty\\Nokia\\Backend\\Backend\\Backend\\obj\\",
+      "outputPath": "D:\\Projekty\\projekt_nokia\\Backend\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
