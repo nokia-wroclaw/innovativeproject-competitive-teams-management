@@ -4,7 +4,7 @@
   "description": "sample react project",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server index.js",
+    "start": "webpack-dev-server ./src/index.js",
     "build": "webpack",
     "test": "jshint index.js",
     "lint": "eslint ."
@@ -13,6 +13,8 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
