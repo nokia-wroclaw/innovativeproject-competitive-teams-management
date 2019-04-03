@@ -18,7 +18,7 @@ namespace Backend.Services
         public IEnumerable<User> GetAllUsers()
         {
 
-            return _appDbContext.Users;
+            return _appDbContext.Users.ToList();
         }
 
         public User GetUserById(int id)

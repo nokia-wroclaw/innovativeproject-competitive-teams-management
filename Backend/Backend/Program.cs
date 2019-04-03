@@ -16,23 +16,23 @@ namespace Backend
     {
         public static void Main(string[] args)
         {
-            //CreateWebHostBuilder(args).Build().Run();
+            CreateWebHostBuilder(args).Build().Run();
 
-            var host = CreateWebHostBuilder(args).Build();
+            //var host = CreateWebHostBuilder(args).Build();
 
-            using (var scope = host.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                try
-                {
-                    var context = services.GetRequiredService<AppDbContext>();
-                    DbInitializer.Seed(context);
-                }
-                catch (Exception )
-                {
+            //using (var scope = host.Services.CreateScope())
+            //{
+            //    var services = scope.ServiceProvider;
+            //    try
+            //    {
+            //        var context = services.GetRequiredService<AppDbContext>();
+            //        DbInitializer.Seed(context);
+            //    }
+            //    catch (Exception )
+            //    {
                     
-                }
-            }
+            //    }
+            //}
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
