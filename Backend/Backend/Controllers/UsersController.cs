@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Backend.Models;
 using Backend.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,6 +31,20 @@ namespace Backend.Controllers
             var userFromRepo = _userService.GetUserById(id);
 
             return new JsonResult(userFromRepo);
+        }
+
+        [HttpPost("api/user")]
+        public IActionResult AddUser([FromBody] User user)
+        {
+            //User temp = new User();
+            //new JsonResult(user);
+
+            //temp.FirstName = user.FirstName;
+            //temp.LastName = user.LastName;
+
+            _userService.AddUser(user);
+
+            return Ok();
         }
 
     }

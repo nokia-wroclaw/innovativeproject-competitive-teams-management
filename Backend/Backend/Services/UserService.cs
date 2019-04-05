@@ -25,5 +25,11 @@ namespace Backend.Services
         {
             return _appDbContext.Users.FirstOrDefault(x => x.Id == id);
         }
+
+        public void AddUser(User user)
+        {
+            _appDbContext.Users.Add(user);
+            _appDbContext.SaveChanges();
+        }
     }
 }
