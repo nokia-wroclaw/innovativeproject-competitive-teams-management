@@ -28,6 +28,7 @@ namespace Backend.Controllers
         [HttpGet("api/users/{id}")]
         public IActionResult GetUsers(int id)
         {
+           
             var userFromRepo = _userService.GetUserById(id);
 
             return new JsonResult(userFromRepo);
@@ -36,16 +37,53 @@ namespace Backend.Controllers
         [HttpPost("api/user")]
         public IActionResult AddUser([FromBody] User user)
         {
-            //User temp = new User();
-            //new JsonResult(user);
-
-            //temp.FirstName = user.FirstName;
-            //temp.LastName = user.LastName;
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(user);
+            }
 
             _userService.AddUser(user);
 
             return Ok();
         }
+
+        [HttpPut("api/user/{id}")]
+        public IActionResult EditUser(int id, [FromBody] User user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(user);
+            }
+
+            _userService.EditUser(id, user);
+
+            return Ok();
+        }
+
+        [HttpPatch("api/user/{id}")]
+        public IActionResult PatchUser(int id, [FromBody] User user)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(user);
+            }
+
+            _userService.EditUser(id, user);
+
+            return Ok();
+        }
+
+        [HttpDelete("api/user/{id}")]
+        public IActionResult DeleteUser(int id)
+        {
+            
+            _userService.DeleteUser(id);
+
+            return Ok();
+        }
+
+
+
 
     }
 }

@@ -31,5 +31,27 @@ namespace Backend.Services
             _appDbContext.Users.Add(user);
             _appDbContext.SaveChanges();
         }
+
+        public void EditUser(int id, User user)
+        {
+            var _user = _appDbContext.Users.FirstOrDefault(x => x.Id == id);
+            if (_user != null)
+            {
+                _user.FirstName = user.FirstName;
+                _user.LastName = user.LastName;
+                _appDbContext.SaveChanges();
+            }
+
+        }
+
+        public void DeleteUser(int id)
+        {
+            var _user = _appDbContext.Users.FirstOrDefault(x => x.Id == id);
+            if (_user != null)
+            {
+                _appDbContext.Remove(_user);
+                _appDbContext.SaveChanges();
+            }
+        }
     }
 }
