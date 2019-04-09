@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//gdyby sypa³o b³êdami yarn add @babel/plugin-proposal-class-properties --dev
+//gdyby sypa³o b³êdami yarn add @babel/plugin-proposal-class-properties --dev /
 ReactDOM.render(<div>TEST </div>, document.getElementById("root"));
 class Clock extends React.Component {
     constructor(props) {
