@@ -12,3 +12,16 @@ D:\Projekty\projekt_nokia\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.RazorT
 D:\Projekty\projekt_nokia\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.dll
 D:\Projekty\projekt_nokia\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.pdb
 D:\Projekty\projekt_nokia\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.csprojAssemblyReference.cache
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\bin\Debug\netcoreapp2.1\Backend.deps.json
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\bin\Debug\netcoreapp2.1\Backend.runtimeconfig.json
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\bin\Debug\netcoreapp2.1\Backend.runtimeconfig.dev.json
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\bin\Debug\netcoreapp2.1\Backend.dll
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\bin\Debug\netcoreapp2.1\Backend.pdb
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.csproj.CoreCompileInputs.cache
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.RazorAssemblyInfo.cache
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.RazorAssemblyInfo.cs
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.AssemblyInfoInputs.cache
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.AssemblyInfo.cs
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.RazorTargetAssemblyInfo.cache
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.dll
+D:\Program Files (x86)\GitHub\innovativeproject-competitive-teams-management\Backend\Backend\obj\Debug\netcoreapp2.1\Backend.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Backend.Services;
 
 namespace Backend.Models
 {
@@ -24,7 +25,8 @@ namespace Backend.Models
             {
                 context.AddRange
                 (
-                    new Team {Name = "Dziki z Nokii"},
+                    new Team { Name = "Dziki z Nokii"},
+            
                     new Team { Name = "Nie W4rto"}
                 );
 

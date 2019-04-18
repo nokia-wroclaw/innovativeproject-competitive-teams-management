@@ -8,7 +8,7 @@ namespace Backend.Services
 {
     public class UserService : IUserService
     {
-        private readonly AppDbContext _appDbContext;
+        private readonly AppDbContext _appDbContext;// variable used for sending data to DataBase
 
         public UserService(AppDbContext appDbContext)
         {

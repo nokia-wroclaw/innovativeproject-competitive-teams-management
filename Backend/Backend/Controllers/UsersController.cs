@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Backend.Controllers
 {
     public class UsersController : Controller
-    {
+    {/*
         private IUserService _userService;
 
         public UsersController(IUserService userService)
@@ -17,7 +17,17 @@ namespace Backend.Controllers
             _userService = userService;
         }
 
-        [HttpGet("api/users")]
+        [HttpGet("api/teamss")]
+        public string[] My()
+        {
+            return new[]
+            {
+                "Is the Microwave working?",
+                "Where can i pick the washing machine from?",
+            };
+        }
+
+        [HttpGet("api/userss")]
         public IActionResult GetUsers()
         {
             var usersFromRepo = _userService.GetAllUsers();
@@ -82,7 +92,7 @@ namespace Backend.Controllers
             return Ok();
         }
 
-
+        */
 
 
     }
