@@ -4,6 +4,7 @@ import css from './file.css';
 
 
 //gdyby sypa�o b��dami yarn add @babel/plugin-proposal-class-properties --dev /
+// npm install --save-dev css-loader style-loader /
 ReactDOM.render(<div>TEST </div>, document.getElementById("root"));
 class Clock extends React.Component {
     constructor(props) {
