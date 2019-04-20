@@ -21,7 +21,11 @@ const config = {
             options: { minimize: true }
           }
         ]
-      }
+      },
+      {
+          test: /\.css$/,
+          use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [
@@ -32,3 +36,4 @@ const config = {
   ]
 };
 module.exports = config;
+
