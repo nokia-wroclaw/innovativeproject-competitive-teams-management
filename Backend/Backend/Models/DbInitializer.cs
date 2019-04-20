@@ -25,8 +25,8 @@ namespace Backend.Models
             {
                 context.AddRange
                 (
-                    new Team { Name = "Dziki z Nokii"},
-            
+                    //new Team { Name = "Dziki z Nokii"},
+                    new Team { Name = "Dzikiii z Nokii", TeamMembers = new List<User> { new User {FirstName = "Maciej",LastName="Cukierek" } }  },
                     new Team { Name = "Nie W4rto"}
                 );
 

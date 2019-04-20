@@ -12537,11 +12537,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Program Files (x86)\\GitHub\\innovativeproject-competitive-teams-management\\Backend\\Backend\\Backend.csproj",
+      "projectUniqueName": "C:\\Users\\Student227162\\Desktop\\Question\\innovativeproject-competitive-teams-management-Question\\innovativeproject-competitive-teams-management-Question\\Backend\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\Program Files (x86)\\GitHub\\innovativeproject-competitive-teams-management\\Backend\\Backend\\Backend.csproj",
+      "projectPath": "C:\\Users\\Student227162\\Desktop\\Question\\innovativeproject-competitive-teams-management-Question\\innovativeproject-competitive-teams-management-Question\\Backend\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\Student227162\\.nuget\\packages\\",
-      "outputPath": "D:\\Program Files (x86)\\GitHub\\innovativeproject-competitive-teams-management\\Backend\\Backend\\obj\\",
+      "outputPath": "C:\\Users\\Student227162\\Desktop\\Question\\innovativeproject-competitive-teams-management-Question\\innovativeproject-competitive-teams-management-Question\\Backend\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

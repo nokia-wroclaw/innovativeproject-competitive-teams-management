@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Backend.Controllers
 {
     public class UsersController : Controller
-    {/*
+    {
         private IUserService _userService;
 
         public UsersController(IUserService userService)
@@ -92,7 +92,7 @@ namespace Backend.Controllers
             return Ok();
         }
 
-        */
+        
 
 
     }

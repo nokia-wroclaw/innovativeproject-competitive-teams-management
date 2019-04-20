@@ -84,7 +84,7 @@ namespace Backend.Controllers
             return Ok();
         }
 
-        [HttpPost("api/team/{id}")]
+        [HttpPatch("api/team/{id}")]
         public IActionResult AddUserToTeam(int id,[FromBody] User user)
         {
 
