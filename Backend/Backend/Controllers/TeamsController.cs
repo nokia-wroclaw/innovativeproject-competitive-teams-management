@@ -8,7 +8,7 @@ using Backend.Services;
 
 namespace Backend.Controllers
 {
-    
+
     public class TeamsController : Controller
     {
         private ITeamService _teamService;
@@ -18,11 +18,19 @@ namespace Backend.Controllers
             _teamService = teamService;
         }
 
+
+        [HttpGet("api/test")]
+        public IActionResult Test()
+        {
+            
+            return new JsonResult(_teamService.GetAllTeams());
+        }
+
         [HttpGet("api/teams")]
         public IActionResult GetTeams()
         {
             var teamsFromRepo = _teamService.GetAllTeams();
-
+            
             
             return new JsonResult(teamsFromRepo);
         }
@@ -31,9 +39,11 @@ namespace Backend.Controllers
         public IActionResult GetTeams(int id)
         {
 
-            var teamFromRepo = _teamService.GetTeamById(id);
+            var userFromTeam = _teamService.Test(id);
+           // var userFromRepo = _teamService.Test(id);
+           // var teamAndUser = new { Result = teamFromRepo, userFromRepo };
 
-            return new JsonResult(teamFromRepo);
+            return new JsonResult(userFromTeam);
         }
 
         [HttpPost("api/team")]
@@ -62,7 +72,7 @@ namespace Backend.Controllers
             return Ok();
         }
 
-        [HttpPatch("api/team/{id}")]
+        [HttpPatch("api/team/edit/{id}")]
         public IActionResult PatchTeam(int id, [FromBody] Team team)
         {
             if (!ModelState.IsValid)
@@ -75,7 +85,7 @@ namespace Backend.Controllers
             return Ok();
         }
 
-        [HttpDelete("api/team/{id}")]
+        [HttpDelete("api/team/edit/delete/{id}")]
         public IActionResult DeleteTeam(int id)
         {
 
@@ -84,7 +94,8 @@ namespace Backend.Controllers
             return Ok();
         }
 
-        [HttpPatch("api/team/{id}")]
+
+        [HttpPatch("api/team/add/{id}")]
         public IActionResult AddUserToTeam(int id,[FromBody] User user)
         {
 

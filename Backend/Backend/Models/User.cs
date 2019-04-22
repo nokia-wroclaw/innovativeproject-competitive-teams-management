@@ -13,6 +13,7 @@ namespace Backend.Models
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
+        public Team Team { get; set; }
 
     }
 }

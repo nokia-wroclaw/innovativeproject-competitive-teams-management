@@ -13,6 +13,7 @@ namespace Backend.Services
         void AddTeam(Team team);
         void EditTeam(int id, Team team);
         void DeleteTeam(int id);
-        void AddUserToTeam(int id, User user);
+        void AddUserToTeam(int id,User user);
+        User Test(int id);
     }
 }
