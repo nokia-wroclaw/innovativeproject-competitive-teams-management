@@ -1,11 +1,29 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import css from './file.css';
+import EpicMenu from './components/Menu/Menu';
+
+
 
 
 //gdyby sypa�o b��dami yarn add @babel/plugin-proposal-class-properties --dev /
-// npm install --save-dev css-loader style-loader /
+
+
 ReactDOM.render(<div>TEST </div>, document.getElementById("root"));
+
+class NavBar extends Component {
+    render() {
+        return (
+            <div className="container center">
+            <EpicMenu />    
+             </div>
+            
+        )
+    }
+}
+export default NavBar;
+ReactDOM.render(<NavBar />, document.getElementById('root'));
+
 class Clock extends React.Component {
     constructor(props) {
         super(props);
@@ -42,7 +60,7 @@ class Clock extends React.Component {
 
 }
 
-ReactDOM.render(<Clock />, document.getElementById('root'));
+ReactDOM.render(<Clock />, document.getElementById('root2'));
 
 
 class Button extends React.Component {
@@ -66,7 +84,7 @@ class Button extends React.Component {
     }
 }
 
-ReactDOM.render(<Button />, document.getElementById('root2'));
+ReactDOM.render(<Button />, document.getElementById('root3'));
 
 class Team extends React.Component {
     constructor(props) {
@@ -98,4 +116,10 @@ class Team extends React.Component {
         );
     }
 }
-ReactDOM.render(<Team />, document.getElementById('root3'));
+ReactDOM.render(<Team />, document.getElementById('root4'));
+
+
+
+
+
+
