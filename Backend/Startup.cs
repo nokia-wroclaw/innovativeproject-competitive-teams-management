@@ -28,6 +28,7 @@ namespace Backend
                 options.UseSqlServer(connectionString));
 
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ITeamService, TeamService>();
 
 
 
